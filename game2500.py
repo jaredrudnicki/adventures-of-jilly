@@ -11,7 +11,7 @@ class Home:
         self.myfont = pygame.font.SysFont('Courier', 20)
         self.count = 1
         
-        self.LEVEL1= ([["tl-wall", "t-wall", "t-wall", "tr-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "tr-wall"],
+        self.LEVEL3 = ([["tl-wall", "t-wall", "t-wall", "tr-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "tr-wall"],
                        ["l-wall", "floor", "key", "r-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall"],
                        ["l-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall"],
                        ["wall", "wall", "wall", "wall", "floor", "floor", "floor", "empty-shlf", "cos-shlf", "cos-shlf", "cos-shlf", "empty-shlf", "cos-shlf", "floor", "floor", "r-wall"],
@@ -22,14 +22,40 @@ class Home:
                        ["l-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall"],
                        ["l-wall", "floor", "ladder", "r-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall"],
                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]])
-        self.SPIDER1 = ([[9,5],[8,5],[7,5],[6,5],[5,5],[4,5],[3,5],[2,5],[1,5],[2,5],[3,5],[4,5],[5,5],[6,5],[7,5],[8,5]])
-        self.PLAYER1 = [1,1]
+        self.SPIDER3 = ([[9,5],[8,5],[7,5],[6,5],[5,5],[4,5],[3,5],[2,5],[1,5],[2,5],[3,5],[4,5],[5,5],[6,5],[7,5],[8,5]])
+        self.PLAYER3 = [1,1]
+        self.TIME3 = 100
 
-        self.LEVEL2 = ([["wall", "wall", "wall", "wall", "wall"],
-                        ["wall", "floor", "floor", "floor", "wall"],
-                        ["wall", "wall", "wall", "wall", "wall"]])
-        self.SPIDER2 = ([[1,3]])
-        self.PLAYER2 = [1,1]
+        self.LEVEL1 = ([["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+                        ["tl-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "tr-wall", "wall"],
+                        ["l-wall", "floor", "floor", "key", "floor", "knife", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-door", "wall"],
+                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"],
+                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]])
+        self.SPIDER1 = ([[12,12]])
+        self.PLAYER1 = [1,5]
+        self.TIME1 = 20
+
+
+        self.LEVEL2 = ([["tl-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "t-wall", "tr-wall", "wall"],
+                        ["l-wall", "key", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall", "wall"],
+                        ["l-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "knife", "floor", "floor", "r-wall", "wall"],
+                        ["l-wall", "floor", "floor", "floor", "floor", "floor", "food-shlf", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall", "wall"],
+                        ["l-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall", "wall"],
+                        ["l-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall", "wall"],
+                        ["l-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall", "wall"],
+                        ["tl-wall", "t-wall", "t-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall", "wall"],
+                        ["l-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-door", "wall"],
+                        ["l-wall", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "floor", "r-wall", "wall"],
+                        ["wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall"]])
+        self.PLAYER2 = [1,9]
+        self.SPIDER2 = ([[8,12], [8,11],[8,10],[8,9],[8,8],[8,7],[8,6],[8,5], [8,4],[7,4],[6,4],[5,4],[4,4],[3,4], [2, 4],[2,5],[2,6],[2,7],[2,8],[2,9],[2,10],[2,11],[2,12],[3,12],[4,12],[5,12],[6,12],[7,12]])
+        self.TIME2 = 30
 
     def next_level(self):
         if(self.count == 1):
@@ -40,15 +66,16 @@ class Home:
             self.level_three()
     
     def level_one(self):
-        g = Game(self.LEVEL1, self.SPIDER1, self.PLAYER1, 100, self)
+        g = Game(self.LEVEL1, self.SPIDER1, self.PLAYER1, self.TIME1, self)
         g.run()
 
     def level_two(self):
-        g = Game(self.LEVEL2, self.SPIDER2, self.PLAYER2, 100, self)
+        g = Game(self.LEVEL2, self.SPIDER2, self.PLAYER2, self.TIME2, self)
         g.run()
         
     def level_three(self):
-        print('not_used')
+        g = Game(self.LEVEL3, self.SPIDER3, self.PLAYER3, self.TIME3, self)
+        g.run()
         
     def draw(self):
         ts1 = self.myfont.render('Welcome', True, RED)
@@ -135,7 +162,7 @@ class Player(pygame.sprite.Sprite):
             if("key" in self.items and "knife" in self.items):
                 print("won")
                 self.game.running = False
-                if(self.game.levelNum < 2):
+                if(self.game.levelNum < 3):
                     self.game.home.next_level()
                 else:
                     g = GameOver()
